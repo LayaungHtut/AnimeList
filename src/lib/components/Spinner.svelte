@@ -57,7 +57,7 @@
 	.anime-grid {
 		display: grid;
 		gap: 2.5rem;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.ancestor {
@@ -79,7 +79,7 @@
 
 	@media (max-width: 768px) {
 		.anime-grid {
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 </style>

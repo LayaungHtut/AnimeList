@@ -12,9 +12,11 @@
 			{#each data.animes as anime}
 				<AnimeCard {...anime} />
 			{/each}
-			<Spinner />
+			
 		</section>
-		<div id="spinner-container"></div>
+		<div id="spinner-container">
+			<Spinner />
+		</div>
 	</main>
 </div>
 
@@ -39,7 +41,7 @@
 			& .anime-grid {
 				display: grid;
 				gap: 2.5rem;
-				grid-template-columns: repeat(3, 1fr);
+				grid-template-columns: repeat(4, 1fr);
 			}
 		}
 	}
@@ -48,7 +50,7 @@
 		.container {
 			& .main {
 				& .anime-grid {
-					grid-template-columns: repeat(2, 1fr);
+					grid-template-columns: repeat(1, 1fr);
 				}
 			}
 		}

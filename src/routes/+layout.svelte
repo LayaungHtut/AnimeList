@@ -35,7 +35,7 @@
 		box-sizing: border-box;
 
 		& .header {
-			background: url('/path/to/hero.jpg') center/cover no-repeat;
+			
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -45,7 +45,7 @@
 
 			& .header-content {
 				display: flex;
-				flex-direction: column;
+				/* flex-direction: column; */
 				gap: 2.5rem;
 				text-align: center;
 
@@ -106,6 +106,27 @@
 					height: 30px;
 					margin-left: 1rem;
 					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		main {
+			& .header {
+				& .header-content {
+					display: flex;
+					flex-direction: row;
+					& .header-title {
+						font-size: 2rem;
+					}
+				}
+
+				& .header-image-container {
+
+					& .header-image {
+						display: none;
+					}
 				}
 			}
 		}
